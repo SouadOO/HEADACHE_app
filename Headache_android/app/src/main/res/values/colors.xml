@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="themeColor">#008080</color>
+    <color name="titleColor">#888787</color>
+    <!--normal colors-->
+    <color name="darkTextColor">#020000</color>
+    <color name="hitTextColor">#7E7E7E</color>
+    <color name="colorOrange">#D84315</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#008080</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#008080</color>
+
+    <!-- Calendar Color-->
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+
+    <!--colors for crop activity-->
+    <!--<color name="ucrop_color_toolbar">@color/teal_500</color>-->
+    <!--<color name="ucrop_color_statusbar">@color/teal_700</color>-->
+    <!--<color name="ucrop_color_widget_active">@color/teal_500</color>-->
+
+
+
+</resources>

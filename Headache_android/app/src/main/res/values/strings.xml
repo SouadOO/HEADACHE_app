@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Headache</string>
+    <string name="login_email_hint">Email</string>
+    <string name="action_settings">test</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_repeat_password_hint">Password</string>
+
+
+    <string name="IsDoctor">Are you a doctor ?</string>
+    <string name="titleSetPassword">"don't panic! \nYou can update password here</string>
+    <string name="hasAccount">Already have an account?</string>
+    <string name="titleToRegister">"Registration!</string>
+    <string name="forgotPass">Forgot Password?</string>
+
+    <!--Calendar Value -->
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+    <string name="title_activity_basic">Calendar</string>
+    <string name="title_activity_asynchronous">Asynchronous</string>
+    <string name="title_activity_NewAttack">New Attack</string>
+    <string name="async_error">Could not download events from the internet</string>
+
+
+    <string name="titleFinnishRegister">FinnishRegister</string>
+
+    <!--for facebook login-->
+
+    <!--facebook login ends-->
+
+    <!--error messages-->
+
+</resources>

@@ -1,0 +1,34 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.unige.headache_template" >
+
+    <item android:id="@+id/action_today"
+        android:title="@string/action_today"
+        android:orderInCategory="100"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <group
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/action_day_view"
+            android:orderInCategory="100"
+            android:title="@string/action_day_view"
+            android:visible="true"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_three_day_view"
+            android:checked="true"
+            android:orderInCategory="100"
+            android:title="@string/action_three_day_view"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_week_view"
+            android:orderInCategory="100"
+            android:title="@string/action_week_view"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/themeColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="List of your Patients"
+            android:textAlignment="center"
+            android:textColor="@color/whiteTextColor"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/patient_recycler_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="1dp"
+            android:scrollbars="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.attack.DurationActivity">
+
+    <TextView
+        android:id="@+id/textViewStart"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Start Time"
+        android:textSize="28dp"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/in_time_start"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStart" />
+
+    <EditText
+        android:id="@+id/in_date_start"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_time_start" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_time_start"
+        style="@style/loginButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="SELECT TIME"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintStart_toEndOf="@+id/in_time_start"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStart"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_date_start"
+        style="@style/loginButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="SELECT DATE"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintStart_toEndOf="@+id/in_date_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time_start"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <TextView
+        android:id="@+id/textViewEnd"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="End Time"
+        android:textSize="28dp"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <EditText
+        android:id="@+id/in_time_end"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_date_end"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:enabled="false"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnd" />
+
+    <EditText
+        android:id="@+id/in_date_end"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_time_end" />
+
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_time_end"
+        style="@style/loginButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn_date_end"
+        android:layout_alignStart="@+id/btn_date_end"
+        android:layout_alignLeft="@+id/btn_date_end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="SELECT TIME"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintStart_toEndOf="@+id/in_time_end"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnd"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_date_end"
+        style="@style/loginButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/in_date_end"
+        android:layout_toRightOf="@+id/in_date_end"
+        android:text="SELECT DATE"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintStart_toEndOf="@+id/in_date_end"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time_end"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="saveOnClick"
+        android:src="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
